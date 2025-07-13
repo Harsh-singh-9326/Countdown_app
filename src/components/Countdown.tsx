@@ -15,11 +15,20 @@ function Countdown() {
   //@ts-ignorets.ignore
   id.current = setInterval(() => {
     //@ts-ignore
-    setDiff(new Date(target).getTime() - new Date().getTime()) 
+    const remaining = new Date(target).getTime() - new Date().getTime() 
+    //@ts-ignore
+    if (remaining <= 0) {
+        setDiff(0); 
+        if (id.current) clearInterval(id.current); 
+      } else {
+        //@ts-ignore
+        setDiff(remaining); 
+      }
+
   },1000 );
 }
  useEffect(()=>{
-    if(diff ==0){
+    if(diff ===0 && id.current){
        //@ts-ignore
        clearInterval(id.current)
     }
