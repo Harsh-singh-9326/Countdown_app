@@ -14,17 +14,18 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  overflow-x: hidden; /* fixes mobile side scroll */
+  overflow-x: hidden;
 }
 
 .container {
   background-color: rgba(255, 255, 255, 0.08);
-  padding: 2rem;
+  padding: 2rem 1.5rem;
   border-radius: 20px;
   max-width: 500px;
   width: 90%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   text-align: center;
+  margin: 0 auto;
 }
 
 h1 {
@@ -62,7 +63,7 @@ button:hover {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
   padding: 0;
 }
@@ -82,10 +83,9 @@ button:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Optional: Fix spacing on very small screens */
-@media (max-width: 360px) {
-  h1 {
-    font-size: 1.4rem;
+@media (max-width: 400px) {
+  .container {
+    padding: 1.2rem;
   }
 
   #display li {
