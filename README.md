@@ -37,14 +37,10 @@ Set a target date & time and watch the countdown update in real time!
 git clone https://github.com/Harsh-singh-9326/Countdown_app.git
 cd Countdown_app
 2️⃣ Install dependencies
-bash
-Copy
-Edit
+
 npm install
 3️⃣ Start the development server
-bash
-Copy
-Edit
+
 npm run dev
 Open http://localhost:5173 in your browser.
 
@@ -59,8 +55,7 @@ Uses useState, useEffect, and useRef React hooks
 
 📁 Folder Structure
 bash
-Copy
-Edit
+
 Countdown_app/
 ├── src/
 │   ├── Countdown.tsx        # Main Countdown logic
@@ -71,8 +66,7 @@ Countdown_app/
 └── README.md
 🧪 Example
 tsx
-Copy
-Edit
+
 // Countdown.tsx (Simplified)
 const [target, setTarget] = useState<string | null>(null);
 const [diff, setDiff] = useState<number>(0);
